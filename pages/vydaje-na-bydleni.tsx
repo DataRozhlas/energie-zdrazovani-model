@@ -12,10 +12,10 @@ const buttons: string[] = [
 ];
 
 const categories: string[] = [
-  "loni (listopad 21)",
-  "letos v létě (červenec 22)",
-  "kdyby nastal 200 % růst cen nergií",
-  "při zastropování cen energií (s fixací)",
+  "loni (listopad\u00A02021)",
+  "letos v létě (červenec\u00A02022)",
+  "kdyby nastal 200\u00A0% růst cen energií",
+  "při zastropování cen energií (s\u00A0fixací)",
 ];
 
 const seriesName: string = "za bydlení utratí";
@@ -28,19 +28,19 @@ const data: any = [
   [{ name: "", data: [23, 29, 43, 32] }],
   [
     {
-      name: "Domácnosti pod hranicí chudoby (< 60 % mediánu)",
+      name: "Domácnosti pod hranicí chudoby (<\u00A060\u00A0%\u00A0mediánu)",
       data: [39, 47, 67, 54],
     },
     {
-      name: "Nízkopříjmové domácnosti (60–100 % mediánu)",
+      name: "Nízkopříjmové domácnosti (60–100\u00A0%\u00A0mediánu)",
       data: [24, 29, 46, 32],
     },
     {
-      name: "Nadstandardně příjmové domácnosti (101–150 % mediánu)",
+      name: "Nadstandardně příjmové domácnosti (101–150\u00A0%\u00A0mediánu)",
       data: [19, 23, 35, 26],
     },
     {
-      name: "Vysokopříjmová domácnosti (nad 150 % mediánu)",
+      name: "Vysokopříjmová domácnosti (nad 150\u00A0%\u00A0mediánu)",
       data: [16, 19, 29, 21],
     },
   ],

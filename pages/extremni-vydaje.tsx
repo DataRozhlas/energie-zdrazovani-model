@@ -12,10 +12,10 @@ const buttons: string[] = [
 ];
 
 const categories: string[] = [
-  "loni (listopad 21)",
-  "letos v létě (červenec 22)",
-  "kdyby nastal 200 % růst cen nergií",
-  "při zastropování cen energií (s fixací)",
+  "loni (listopad\u00A02021)",
+  "letos v létě (červenec\u00A02022)",
+  "kdyby nastal 200\u00A0% růst cen energií",
+  "při zastropování cen energií (s\u00A0fixací)",
 ];
 
 const seriesName: string = "";
@@ -29,19 +29,19 @@ const data: any = [
   [{ name: "", data: [15, 24, 48, 30] }],
   [
     {
-      name: "Domácnosti pod hranicí chudoby (< 60 % mediánu)",
+      name: "Domácnosti pod hranicí chudoby (<\u00A060\u00A0%\u00A0mediánu)",
       data: [44, 54, 79, 62],
     },
     {
-      name: "Nízkopříjmové domácnosti (60–100 % mediánu)",
+      name: "Nízkopříjmové domácnosti (60–100\u00A0%\u00A0mediánu)",
       data: [12, 26, 54, 30],
     },
     {
-      name: "Nadstandardně příjmové domácnosti (101–150 % mediánu)",
+      name: "Nadstandardně příjmové domácnosti (101–150\u00A0%\u00A0mediánu)",
       data: [8, 12, 34, 18],
     },
     {
-      name: "Vysokopříjmové domácnosti (nad 150 % mediánu)",
+      name: "Vysokopříjmové domácnosti (nad 150\u00A0%\u00A0mediánu)",
       data: [5, 10, 19, 11],
     },
   ],
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold leading-7 mb-4">
-        Kolik z nich dá za bydlení přes 40 % příjmů
+        {`Kolik z nich dá za bydlení přes\u00A040\u00A0%\u00A0příjmů`}
       </h1>
       <span className="isolate inline-flex rounded-md shadow-sm mx-px sm:mx-0 mb-px">
         {buttons.map((button, index) =>

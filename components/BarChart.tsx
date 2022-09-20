@@ -18,7 +18,7 @@ const BarChart = (props: {
         name: props.seriesName,
         data: props.data,
         color: props.color,
-        type: "column",
+        type: "bar",
       },
     ],
     xAxis: {
@@ -35,6 +35,7 @@ const BarChart = (props: {
     },
     plotOptions: {
       series: {
+        animation: false,
         dataLabels: {
           enabled: true,
           format: "{y} %",

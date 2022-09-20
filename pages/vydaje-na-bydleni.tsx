@@ -2,31 +2,52 @@ import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import Button from "../components/Button";
 import BarChart from "../components/BarChart";
-import styles from "../styles/Home.module.css";
 
 const buttons: string[] = [
   "Všechny domácnosti",
-  "Domácnosti podle příjmů",
-  "Domácnosti podle příjmů a dětí",
-  "Domácnosti podle příjmů a typu bydlení",
+  "Podle příjmů",
+  "Podle příjmů a dětí",
+  "Podle příjmů a typu bydlení",
 ];
+
+const categories: string[] = [
+  "loni (listopad 21)",
+  "letos v létě (červenec 22)",
+  "kdyby nastal 200 % růst cen nergií",
+  "při zastropování cen energií (s fixací)",
+];
+
+const seriesName: string = "za bydlení utratí";
+
+const tooltipSuffix: string = "% z příjmů";
+
+const color: string = "#673349";
 
 const data: any = [
   [{ name: "", data: [23, 29, 43, 32] }],
   [
-    { name: "Pod hranicí chudoby (< 60 % mediánu)", data: [39, 47, 67, 54] },
-    { name: "Nízkopříjmová (60–100 % mediánu)", data: [24, 29, 46, 32] },
     {
-      name: "Nadstandardně příjmová (101–150 % mediánu)",
+      name: "Domácnosti pod hranicí chudoby (< 60 % mediánu)",
+      data: [39, 47, 67, 54],
+    },
+    {
+      name: "Nízkopříjmové domácnosti (60–100 % mediánu)",
+      data: [24, 29, 46, 32],
+    },
+    {
+      name: "Nadstandardně příjmové domácnosti (101–150 % mediánu)",
       data: [19, 23, 35, 26],
     },
-    { name: "Vysokopříjmová (nad 150 % mediánu)", data: [16, 19, 29, 21] },
+    {
+      name: "Vysokopříjmová domácnosti (nad 150 % mediánu)",
+      data: [16, 19, 29, 21],
+    },
   ],
   [
-    { name: "S dětmi – příjem pod medián", data: [28, 36, 51, 41] },
-    { name: "S dětmi – příjem nad medián", data: [18, 22, 33, 24] },
-    { name: "Bez dětí – příjem pod medián", data: [31, 37, 55, 42] },
-    { name: "Bez dětí – příjem nad medián", data: [16, 21, 32, 22] },
+    { name: "Domácnosti s dětmi – příjem pod medián", data: [28, 36, 51, 41] },
+    { name: "Domácnosti s dětmi – příjem nad medián", data: [18, 22, 33, 24] },
+    { name: "Domácnosti bez dětí – příjem pod medián", data: [31, 37, 55, 42] },
+    { name: "Domácnosti bez dětí – příjem nad medián", data: [16, 21, 32, 22] },
   ],
   [
     {
@@ -77,16 +98,30 @@ const Home: NextPage = () => {
         (skupina: { name: string; data: number[] }, index: number) => {
           return (
             <div key={index}>
-              <h2>{skupina.name}</h2>
+              <h2 className="text-center mt-5 mb-1 text-lg">{skupina.name}</h2>
               <BarChart
                 data={skupina.data}
-                color="#673349"
+                color={color}
                 ymax={70}
+                categories={categories}
+                seriesName={seriesName}
+                tooltipSuffix={tooltipSuffix}
               ></BarChart>
             </div>
           );
         }
       )}
+      <p className="text-xs text-right">
+        Zdroj dat:{" "}
+        <a
+          href="https://data.irozhlas.cz/zivot/vydaje-procenta/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Život k nezaplacení
+        </a>{" "}
+        a výpočty PAQ
+      </p>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import Button from "../components/Button";
+import ActiveButton from "../components/ActiveButton";
 import BarChart from "../components/BarChart";
 
 const buttons: string[] = [
@@ -83,16 +84,25 @@ const Home: NextPage = () => {
         Kolik procent z příjmů utratí za bydlení
       </h1>
       <span className="isolate inline-flex rounded-md shadow-sm mx-px sm:mx-0 mb-px">
-        {buttons.map((button, index) => (
-          <Button
-            key={index}
-            index={index}
-            text={button}
-            length={buttons.length}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-          />
-        ))}
+        {buttons.map((button, index) =>
+          index === activeButton ? (
+            <ActiveButton
+              key={index}
+              text={button}
+              setActiveButton={setActiveButton}
+              length={buttons.length}
+              index={index}
+            />
+          ) : (
+            <Button
+              key={index}
+              text={button}
+              setActiveButton={setActiveButton}
+              length={buttons.length}
+              index={index}
+            />
+          )
+        )}
       </span>
       {selectedData.map(
         (skupina: { name: string; data: number[] }, index: number) => {

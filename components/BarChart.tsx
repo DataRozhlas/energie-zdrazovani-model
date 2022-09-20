@@ -52,6 +52,7 @@ const BarChart = (props: {
     },
     chart: {
       animation: false,
+      height: 300,
     },
   };
 

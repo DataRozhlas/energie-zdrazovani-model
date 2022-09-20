@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+
 const Button = (props: {
   index: number;
   text: string;
@@ -5,17 +7,23 @@ const Button = (props: {
   activeButton: number;
   setActiveButton: any;
 }) => {
+  const ref: any = useRef();
+
+  useEffect(() => {
+    ref.current && ref.current.focus();
+  }, []);
+
   const handleButtonClick = (event: any) => {
     props.setActiveButton(Number(event.target.value));
   };
 
-  const addClass = props.activeButton === props.index ? "text-red-600" : "";
-
   if (props.index === 0) {
     return (
       <button
+        ref={ref}
         type="button"
-        className={`relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-4 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 ${addClass}`}
+        autoFocus={true}
+        className="relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-4 py-2 text-xs text-grey-700 font-medium hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 focus:text-red-600"
         value={props.index}
         onClick={handleButtonClick}
       >
@@ -28,7 +36,7 @@ const Button = (props: {
     return (
       <button
         type="button"
-        className={`relative -ml-px inline-flex items-center rounded-r-md border border-gray-300 bg-white px-4 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 ${addClass}`}
+        className="relative -ml-px inline-flex items-center rounded-r-md border border-gray-300 bg-white px-4 py-2 text-xs text-grey-700 font-medium hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 focus:text-red-600"
         value={props.index}
         onClick={handleButtonClick}
       >
@@ -40,7 +48,7 @@ const Button = (props: {
   return (
     <button
       type="button"
-      className={`relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-xs font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 ${addClass}`}
+      className="relative -ml-px inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-xs text-grey-700 font-medium hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 focus:text-red-600"
       value={props.index}
       onClick={handleButtonClick}
     >

@@ -52,6 +52,10 @@ const Home: NextPage = () => {
   const [activeButton, setActiveButton] = useState(0);
   const [selectedData, setSelectedData] = useState(data[activeButton]);
 
+  useEffect(() => {
+    setSelectedData(data[activeButton]);
+  }, [activeButton]);
+
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold leading-7 mb-4">
@@ -69,7 +73,20 @@ const Home: NextPage = () => {
           />
         ))}
       </span>
-      <BarChart data={[1, 2, 3]} color="#673349" type="column"></BarChart>
+      {selectedData.map(
+        (skupina: { name: string; data: number[] }, index: number) => {
+          return (
+            <div key={index}>
+              <h2>{skupina.name}</h2>
+              <BarChart
+                data={skupina.data}
+                color="#673349"
+                ymax={70}
+              ></BarChart>
+            </div>
+          );
+        }
+      )}
     </div>
   );
 };

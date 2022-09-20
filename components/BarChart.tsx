@@ -1,7 +1,7 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
-const BarChart = (props: { color: string; type: string; data: number[] }) => {
+const BarChart = (props: { color: string; data: number[]; ymax: number }) => {
   const options = {
     title: {
       text: undefined,
@@ -10,11 +10,20 @@ const BarChart = (props: { color: string; type: string; data: number[] }) => {
       {
         data: props.data,
         color: props.color,
-        type: props.type,
+        type: "column",
       },
     ],
+    yAxis: {
+      max: props.ymax,
+      title: {
+        enabled: false,
+      },
+    },
     credits: {
       enabled: false,
+    },
+    chart: {
+      animation: false,
     },
   };
 

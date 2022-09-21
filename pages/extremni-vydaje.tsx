@@ -12,7 +12,7 @@ const buttons: string[] = [
 ];
 
 const categories: string[] = [
-  "loni (listopad\u00A02021)",
+  "před rokem (listopad\u00A02021)",
   "letos v létě (červenec\u00A02022)",
   "kdyby nastal 200\u00A0% růst cen energií",
   "při zastropování cen energií (s\u00A0fixací)",
@@ -26,47 +26,64 @@ const tooltipSuffix: string =
 const color: string = "#dd505b";
 
 const data: any = [
-  [{ name: "", data: [15, 24, 48, 30] }],
   [
     {
-      name: "Domácnosti pod hranicí chudoby (<\u00A060\u00A0%\u00A0mediánu)",
-      data: [44, 54, 79, 62],
-    },
-    {
-      name: "Nízkopříjmové domácnosti (60–100\u00A0%\u00A0mediánu)",
-      data: [12, 26, 54, 30],
-    },
-    {
-      name: "Nadstandardně příjmové domácnosti (101–150\u00A0%\u00A0mediánu)",
-      data: [8, 12, 34, 18],
-    },
-    {
-      name: "Vysokopříjmové domácnosti (nad 150\u00A0%\u00A0mediánu)",
-      data: [5, 10, 19, 11],
+      title: "",
+      series: [{ data: [15, 24, 48, 30], color: color, name: seriesName }],
     },
   ],
   [
-    { name: "Domácnosti s dětmi – příjem pod medián", data: [20, 35, 65, 45] },
-    { name: "Domácnosti s dětmi – příjem nad medián", data: [4, 11, 31, 14] },
-    { name: "Domácnosti bez dětí – příjem pod medián", data: [28, 38, 67, 46] },
-    { name: "Domácnosti bez dětí – příjem nad medián", data: [4, 11, 28, 13] },
+    {
+      title: "Domácnosti pod hranicí chudoby (<\u00A060\u00A0%\u00A0mediánu)",
+      series: [{ data: [44, 54, 79, 62], color: color, name: seriesName }],
+    },
+    {
+      title: "Nízkopříjmové domácnosti (60–100\u00A0%\u00A0mediánu)",
+      series: [{ data: [12, 26, 54, 30], color: color, name: seriesName }],
+    },
+    {
+      title: "Nadstandardně příjmové domácnosti (101–150\u00A0%\u00A0mediánu)",
+      series: [{ data: [8, 12, 34, 18], color: color, name: seriesName }],
+    },
+    {
+      title: "Vysokopříjmové domácnosti (nad 150\u00A0%\u00A0mediánu)",
+      series: [{ data: [5, 10, 19, 11], color: color, name: seriesName }],
+    },
   ],
   [
     {
-      name: "Vlastníci a družstevníci – příjem pod medián",
-      data: [9, 22, 53, 26],
+      title: "Domácnosti s dětmi – příjem pod medián",
+      series: [{ data: [20, 35, 65, 45], color: color, name: seriesName }],
     },
     {
-      name: "Vlastníci a družstevníci – příjem nad medián",
-      data: [3, 6, 19, 7],
+      title: "Domácnosti s dětmi – příjem nad medián",
+      series: [{ data: [4, 11, 31, 14], color: color, name: seriesName }],
     },
     {
-      name: "Nájemníci a podnájemníci – příjem pod medián",
-      data: [51, 51, 78, 58],
+      title: "Domácnosti bez dětí – příjem pod medián",
+      series: [{ data: [28, 38, 67, 46], color: color, name: seriesName }],
     },
     {
-      name: "Nájemníci a podnájemníci – příjem nad medián",
-      data: [10, 17, 34, 29],
+      title: "Domácnosti bez dětí – příjem nad medián",
+      series: [{ data: [4, 11, 28, 13], color: color, name: seriesName }],
+    },
+  ],
+  [
+    {
+      title: "Vlastníci a družstevníci – příjem pod medián",
+      series: [{ data: [9, 22, 53, 26], color: color, name: seriesName }],
+    },
+    {
+      title: "Vlastníci a družstevníci – příjem nad medián",
+      series: [{ data: [3, 6, 19, 7], color: color, name: seriesName }],
+    },
+    {
+      title: "Nájemníci a podnájemníci – příjem pod medián",
+      series: [{ data: [51, 51, 78, 58], color: color, name: seriesName }],
+    },
+    {
+      title: "Nájemníci a podnájemníci – příjem nad medián",
+      series: [{ data: [10, 17, 34, 29], color: color, name: seriesName }],
     },
   ],
 ];
@@ -106,17 +123,17 @@ const Home: NextPage = () => {
         )}
       </span>
       {selectedData.map(
-        (skupina: { name: string; data: number[] }, index: number) => {
+        (skupina: { title: string; series: [] }, index: number) => {
           return (
             <div key={index}>
-              <h2 className="text-center mt-5 mb-1 text-lg">{skupina.name}</h2>
+              <h2 className="text-center mt-5 mb-1 text-lg">{skupina.title}</h2>
               <BarChart
-                data={skupina.data}
-                color={color}
-                ymax={80}
+                series={skupina.series}
+                ymax={70}
                 categories={categories}
-                seriesName={seriesName}
                 tooltipSuffix={tooltipSuffix}
+                legend={false}
+                stacking={undefined}
               ></BarChart>
             </div>
           );

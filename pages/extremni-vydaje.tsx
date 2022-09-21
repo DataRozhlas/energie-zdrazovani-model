@@ -103,7 +103,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     postHeightMessage();
-  }, [activeButton]);
+  }, [selectedData, postHeightMessage]);
 
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" ref={containerRef}>
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
               <h2 className="text-center mt-5 mb-1 text-lg">{skupina.title}</h2>
               <BarChart
                 series={skupina.series}
-                ymax={70}
+                ymax={80}
                 categories={categories}
                 tooltipSuffix={tooltipSuffix}
                 legend={false}

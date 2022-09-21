@@ -18,7 +18,7 @@ const Button = (props: {
   return (
     <button
       type="button"
-      className={`${rounded} relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-xs text-grey-700 font-medium hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 focus:text-red-600`}
+      className={`${rounded} relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-xs text-grey-700 dark:text-black font-medium hover:bg-gray-50 focus:z-10 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 focus:text-red-600`}
       value={props.index}
       onClick={handleButtonClick}
     >

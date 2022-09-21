@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Button from "../components/Button";
 import ActiveButton from "../components/ActiveButton";
 import BarChart from "../components/BarChart";
+import { usePostMessageWithHeight } from "../utils/hooks";
 
 const buttons: string[] = [
   "Všechny domácnosti",
@@ -88,6 +89,10 @@ const data: any = [
 ];
 
 const Home: NextPage = () => {
+  const { containerRef, postHeightMessage } = usePostMessageWithHeight(
+    "paq_vydaje_na_bydleni"
+  );
+
   const [activeButton, setActiveButton] = useState(0);
   const [selectedData, setSelectedData] = useState(data[activeButton]);
 
@@ -95,8 +100,12 @@ const Home: NextPage = () => {
     setSelectedData(data[activeButton]);
   }, [activeButton]);
 
+  useEffect(() => {
+    postHeightMessage();
+  }, [activeButton]);
+
   return (
-    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" ref={containerRef}>
       <h1 className="text-3xl font-bold leading-7 mb-4">
         Kolik procent z příjmů utratí za bydlení
       </h1>

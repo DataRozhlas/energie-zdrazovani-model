@@ -134,7 +134,7 @@ const Home: NextPage = () => {
       {selectedData.map(
         (skupina: { title: string; series: [] }, index: number) => {
           return (
-            <div key={index}>
+            <div key={`${skupina.title}-${index}`}>
               <h2 className="text-center mt-5 mb-1 text-lg">{skupina.title}</h2>
               <BarChart
                 series={skupina.series}

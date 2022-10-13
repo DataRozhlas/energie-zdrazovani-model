@@ -2,7 +2,7 @@ import Highcharts, { seriesType } from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 const BarChart = (props: {
-  series: [];
+  series: any;
   ymax: number;
   categories: string[];
   tooltipSuffix: string;
@@ -50,7 +50,7 @@ const BarChart = (props: {
     },
     chart: {
       animation: false,
-      height: 300,
+      height: props.series[0].data.length * 50 + 80,
     },
   };
 

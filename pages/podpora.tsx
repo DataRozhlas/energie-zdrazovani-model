@@ -2,80 +2,60 @@ import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import Button from "../components/Button";
 import ActiveButton from "../components/ActiveButton";
-import BarChart from "../components/BarChart";
+import LineChart from "../components/LineChart";
 import { usePostMessageWithHeight } from "../utils/hooks";
 
-const buttons: string[] = ["Rozdělní podle příjmů", "Podle vzdělání rodičů"];
+const buttons: string[] = [
+  "Silně zatížení výdaji na bydlení",
+  "Středně zatížení",
+  "Málo ztížení",
+];
 
-const categories: string[] = ["Zvažují", "Přikročili k němu"];
+const categories: string[] = [
+  "9. března 2022",
+  "26. dubna 2022",
+  "31. května 2022",
+  "26. července 2022 ",
+  "27. září 2022",
+];
 
-const seriesName: string = "";
-
-const tooltipSuffix: string = " % domácností";
+const tooltipSuffix: string = " % respondentů";
 
 const color: string = "#dd505b";
 
 const data: any = [
   [
     {
-      title: "Všechny rodiny s dětmi",
+      title: "Dávají za bydlení více než 40 % příjmů",
       series: [
         {
-          data: [21, 9],
+          data: [50, 41.7, 41.8, 41.7, 34.1],
           color: color,
-          name: seriesName,
-        },
-      ],
-    },
-    {
-      title: "Chudší polovina rodin s dětmi",
-      series: [
-        {
-          data: [29, 11],
-          color: color,
-          name: seriesName,
-        },
-      ],
-    },
-    {
-      title: "Bohatší polovina rodin s dětmi",
-      series: [
-        {
-          data: [11, 6],
-          color: color,
-          name: seriesName,
+          name: "Podíl odpovědí určitě ano a spíše ano",
         },
       ],
     },
   ],
   [
     {
-      title: "Bez maturity",
+      title: "Dávají za bydlení 25 až 40 % příjmů",
       series: [
         {
-          data: [34, 11],
+          data: [56.6, 48.4, 46.4, 43.6, 46],
           color: color,
-          name: seriesName,
+          name: "Podíl odpovědí určitě ano a spíše ano",
         },
       ],
     },
+  ],
+  [
     {
-      title: "S maturitou",
+      title: "Dávají za bydlení méně než 25 % příjmů",
       series: [
         {
-          data: [14, 7],
+          data: [63.2, 51.2, 49.2, 44.6, 51.6],
           color: color,
-          name: seriesName,
-        },
-      ],
-    },
-    {
-      title: "VŠ",
-      series: [
-        {
-          data: [12, 7],
-          color: color,
-          name: seriesName,
+          name: "Podíl odpovědí určitě ano a spíše ano",
         },
       ],
     },
@@ -84,7 +64,7 @@ const data: any = [
 
 const Home: NextPage = () => {
   const { containerRef, postHeightMessage } =
-    usePostMessageWithHeight("paq_omezeni_vydaju");
+    usePostMessageWithHeight("paq_podpora");
 
   const [activeButton, setActiveButton] = useState(0);
   const [selectedData, setSelectedData] = useState(data[activeButton]);
@@ -101,7 +81,7 @@ const Home: NextPage = () => {
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" ref={containerRef}>
       <h1 className="text-3xl font-bold leading-7 mb-4">
-        {`Zvažujete nebo jste už přikročili k výraznému omezení výdajů na vybavení a aktivity pro děti?`}
+        {`Souhlasil(a) byste, aby ČR dlouhodobě přijala uprchlíky z Ukrajiny?`}
       </h1>
       <span className="isolate inline-flex rounded-md shadow-sm mx-px sm:mx-0 mb-px">
         {buttons.map((button, index) =>
@@ -129,14 +109,15 @@ const Home: NextPage = () => {
           return (
             <div key={`${Math.random()}-${index}`}>
               <h2 className="text-center mt-5 mb-1 text-lg">{skupina.title}</h2>
-              <BarChart
+              <LineChart
                 series={skupina.series}
-                ymax={40}
+                ymax={65}
+                ymin={30}
                 categories={categories}
                 tooltipSuffix={tooltipSuffix}
-                legend={false}
+                legend={true}
                 stacking={undefined}
-              ></BarChart>
+              ></LineChart>
             </div>
           );
         }

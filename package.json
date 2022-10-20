@@ -7,7 +7,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "production": "aws s3 sync out s3://datarozhlas/energie-zdrazovani-model --acl public-read --delete && aws cloudfront create-invalidation --distribution-id E3ABKG4QXPTL3P --paths '/energie-zdrazovani-model/*'"
+    "production": "aws s3 sync out s3://datarozhlas/energie-zdrazovani-model --acl public-read && aws cloudfront create-invalidation --distribution-id E3ABKG4QXPTL3P --paths '/energie-zdrazovani-model/*'"
   },
   "dependencies": {
     "highcharts": "^10.2.1",

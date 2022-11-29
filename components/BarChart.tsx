@@ -25,7 +25,7 @@ const BarChart = (props: {
         enabled: false,
       },
       labels: {
-        format: "{value} %",
+        format: `{value} ${props.tooltipSuffix}`,
       },
       reversedStacks: false,
     },
@@ -34,7 +34,7 @@ const BarChart = (props: {
         animation: false,
         dataLabels: {
           enabled: true,
-          format: "{y} %",
+          format: `{y} ${props.tooltipSuffix}`,
         },
         tooltip: {
           valueSuffix: props.tooltipSuffix,
@@ -50,7 +50,9 @@ const BarChart = (props: {
     },
     chart: {
       animation: false,
-      height: props.series[0].data.length * 50 + 80,
+      height: props.legend
+        ? props.series[0].data.length * 50 + 80
+        : props.series[0].data.length * 50 + 40,
     },
   };
 

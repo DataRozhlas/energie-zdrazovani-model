@@ -21,7 +21,7 @@ const seriesName: string = "";
 
 const tooltipSuffix: string = " %";
 
-const color: string = "#dd505b";
+const color: string = "#ffd48a";
 
 const data: any = [
   [
@@ -30,11 +30,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 15, color: "#cbd5e1" },
-            { y: 23, color: "#dd505b" },
+            { y: 19, color: "#cbd5e1" },
+            { y: 35, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -45,11 +45,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 44, color: "#cbd5e1" },
-            { y: 46, color: "#dd505b" },
+            { y: 59, color: "#cbd5e1" },
+            { y: 76, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -58,11 +58,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 12, color: "#cbd5e1" },
-            { y: 23, color: "#dd505b" },
+            { y: 18, color: "#cbd5e1" },
+            { y: 34, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -71,11 +71,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 8, color: "#cbd5e1" },
-            { y: 12, color: "#dd505b" },
+            { y: 7, color: "#cbd5e1" },
+            { y: 17, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -84,11 +84,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 5, color: "#cbd5e1" },
-            { y: 8, color: "#dd505b" },
+            { y: 1, color: "#cbd5e1" },
+            { y: 10, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -99,11 +99,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 24, color: "#cbd5e1" },
-            { y: 35, color: "#dd505b" },
+            { y: 29, color: "#cbd5e1" },
+            { y: 53, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -112,11 +112,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 4, color: "#cbd5e1" },
-            { y: 8, color: "#dd505b" },
+            { y: 8, color: "#cbd5e1" },
+            { y: 20, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -125,11 +125,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 26, color: "#cbd5e1" },
-            { y: 35, color: "#dd505b" },
+            { y: 36, color: "#cbd5e1" },
+            { y: 56, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -138,11 +138,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 3, color: "#cbd5e1" },
-            { y: 9, color: "#dd505b" },
+            { y: 7, color: "#cbd5e1" },
+            { y: 14, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -153,11 +153,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 13, color: "#cbd5e1" },
-            { y: 23, color: "#dd505b" },
+            { y: 16, color: "#cbd5e1" },
+            { y: 37, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -166,11 +166,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 13, color: "#cbd5e1" },
-            { y: 21, color: "#dd505b" },
+            { y: 17, color: "#cbd5e1" },
+            { y: 30, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -179,11 +179,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 35, color: "#cbd5e1" },
-            { y: 43, color: "#dd505b" },
+            { y: 50, color: "#cbd5e1" },
+            { y: 63, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -192,11 +192,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 8, color: "#cbd5e1" },
-            { y: 13, color: "#dd505b" },
+            { y: 18, color: "#cbd5e1" },
+            { y: 29, color: "#ffd48a" },
           ],
-          color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          color: "#ffd48a",
+          name: "podíl domácností, které nic neušetří",
         },
       ],
     },
@@ -204,9 +204,8 @@ const data: any = [
 ];
 
 const Home: NextPage = () => {
-  const { containerRef, postHeightMessage } = usePostMessageWithHeight(
-    "paq_narust_extremni"
-  );
+  const { containerRef, postHeightMessage } =
+    usePostMessageWithHeight("paq_narust_nula");
 
   const [activeButton, setActiveButton] = useState(0);
   const [selectedData, setSelectedData] = useState(data[activeButton]);
@@ -222,7 +221,7 @@ const Home: NextPage = () => {
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" ref={containerRef}>
       <h1 className="text-3xl font-bold leading-7 mb-4">
-        {`Jak přibylo domácností výrazně zatížených výdaji na bydlení (>\u00A040\u00A0%\u00A0příjmů)`}
+        {`Jak vzrostl podíl těch, kterým po zaplacení výdajů nic nezbývá`}
       </h1>
       <span className="isolate inline-flex rounded-md shadow-sm mx-px sm:mx-0 mb-px">
         {buttons.map((button, index) =>
@@ -253,7 +252,7 @@ const Home: NextPage = () => {
               <BarChart
                 series={skupina.series}
                 ymin={0}
-                ymax={75}
+                ymax={100}
                 categories={categories}
                 tooltipSuffix={tooltipSuffix}
                 legend={index === selectedData.length - 1}
@@ -266,7 +265,7 @@ const Home: NextPage = () => {
       <p className="text-xs text-right">
         Zdroj dat:{" "}
         <a
-          href="https://data.irozhlas.cz/zivot/extremni-vydaje/"
+          href="https://data.irozhlas.cz/zivot/uspory-procenta/"
           target="_blank"
           rel="noreferrer"
         >

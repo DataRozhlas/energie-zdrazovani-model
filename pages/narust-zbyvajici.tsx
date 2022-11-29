@@ -30,11 +30,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 15, color: "#cbd5e1" },
-            { y: 23, color: "#dd505b" },
+            { y: 9, color: "#cbd5e1" },
+            { y: 14, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -45,11 +45,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 44, color: "#cbd5e1" },
-            { y: 46, color: "#dd505b" },
+            { y: 34, color: "#cbd5e1" },
+            { y: 42, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -58,11 +58,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 12, color: "#cbd5e1" },
-            { y: 23, color: "#dd505b" },
+            { y: 6, color: "#cbd5e1" },
+            { y: 10, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -71,11 +71,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 8, color: "#cbd5e1" },
-            { y: 12, color: "#dd505b" },
+            { y: 2, color: "#cbd5e1" },
+            { y: 5, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -84,11 +84,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 5, color: "#cbd5e1" },
-            { y: 8, color: "#dd505b" },
+            { y: 0, color: "#cbd5e1" },
+            { y: 0, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -99,11 +99,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 24, color: "#cbd5e1" },
-            { y: 35, color: "#dd505b" },
+            { y: 25, color: "#cbd5e1" },
+            { y: 40, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -112,11 +112,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 4, color: "#cbd5e1" },
-            { y: 8, color: "#dd505b" },
+            { y: 1, color: "#cbd5e1" },
+            { y: 1, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -125,11 +125,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 26, color: "#cbd5e1" },
-            { y: 35, color: "#dd505b" },
+            { y: 14, color: "#cbd5e1" },
+            { y: 18, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -138,11 +138,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 3, color: "#cbd5e1" },
-            { y: 9, color: "#dd505b" },
+            { y: 0, color: "#cbd5e1" },
+            { y: 1, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -153,11 +153,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 13, color: "#cbd5e1" },
-            { y: 23, color: "#dd505b" },
+            { y: 12, color: "#cbd5e1" },
+            { y: 22, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -166,11 +166,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 13, color: "#cbd5e1" },
-            { y: 21, color: "#dd505b" },
+            { y: 4, color: "#cbd5e1" },
+            { y: 9, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -179,11 +179,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 35, color: "#cbd5e1" },
-            { y: 43, color: "#dd505b" },
+            { y: 23, color: "#cbd5e1" },
+            { y: 19, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -192,11 +192,11 @@ const data: any = [
       series: [
         {
           data: [
-            { y: 8, color: "#cbd5e1" },
-            { y: 13, color: "#dd505b" },
+            { y: 5, color: "#cbd5e1" },
+            { y: 6, color: "#dd505b" },
           ],
           color: "#dd505b",
-          name: "podíl domácností extrémně zatížených výdaji na bydlení",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
         },
       ],
     },
@@ -205,7 +205,7 @@ const data: any = [
 
 const Home: NextPage = () => {
   const { containerRef, postHeightMessage } = usePostMessageWithHeight(
-    "paq_narust_extremni"
+    "paq_narust_zbyvajici"
   );
 
   const [activeButton, setActiveButton] = useState(0);
@@ -222,7 +222,7 @@ const Home: NextPage = () => {
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" ref={containerRef}>
       <h1 className="text-3xl font-bold leading-7 mb-4">
-        {`Jak přibylo domácností výrazně zatížených výdaji na bydlení (>\u00A040\u00A0%\u00A0příjmů)`}
+        {`Po zaplacení bydlení a jídla jim zbývají 3 000 Kč na osobu (tedy 100 Kč na den)`}
       </h1>
       <span className="isolate inline-flex rounded-md shadow-sm mx-px sm:mx-0 mb-px">
         {buttons.map((button, index) =>
@@ -253,7 +253,7 @@ const Home: NextPage = () => {
               <BarChart
                 series={skupina.series}
                 ymin={0}
-                ymax={75}
+                ymax={50}
                 categories={categories}
                 tooltipSuffix={tooltipSuffix}
                 legend={index === selectedData.length - 1}
@@ -266,7 +266,7 @@ const Home: NextPage = () => {
       <p className="text-xs text-right">
         Zdroj dat:{" "}
         <a
-          href="https://data.irozhlas.cz/zivot/extremni-vydaje/"
+          href="https://data.irozhlas.cz/zivot/zbyvajici-prijmy/"
           target="_blank"
           rel="noreferrer"
         >

@@ -92,6 +92,7 @@ const Home: NextPage = () => {
               <BarChart
                 series={skupina.series}
                 ymax={55}
+                ymin={0}
                 categories={categories}
                 tooltipSuffix={tooltipSuffix}
                 legend={false}

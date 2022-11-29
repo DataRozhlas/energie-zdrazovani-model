@@ -131,6 +131,7 @@ const Home: NextPage = () => {
               <h2 className="text-center mt-5 mb-1 text-lg">{skupina.title}</h2>
               <BarChart
                 series={skupina.series}
+                ymin={0}
                 ymax={40}
                 categories={categories}
                 tooltipSuffix={tooltipSuffix}

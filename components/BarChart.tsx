@@ -4,6 +4,7 @@ import HighchartsReact from "highcharts-react-official";
 const BarChart = (props: {
   series: any;
   ymax: number;
+  ymin: number;
   categories: string[];
   tooltipSuffix: string;
   legend: boolean;
@@ -20,12 +21,14 @@ const BarChart = (props: {
       categories: props.categories,
     },
     yAxis: {
+      min: props.ymin,
       max: props.ymax,
       title: {
         enabled: false,
       },
       labels: {
         format: `{value} ${props.tooltipSuffix}`,
+        autoRotation: undefined,
       },
       reversedStacks: false,
     },

@@ -10,9 +10,9 @@ const isMobile =
 
 const buttons: string[] = [
   "Všechny domácnosti",
+  "Podle typu domácnosti",
   "Podle příjmů",
   "Podle příjmů a dětí",
-  "Podle dětí a věku",
 ];
 
 const categories: string[] = [
@@ -39,6 +39,68 @@ const data: any = [
             { y: 29, color: "#673349" },
             { y: 34, color: "#cbd5e1" },
             { y: 33, color: "#cbd5e1" },
+          ],
+          color: "#673349",
+          name: "kolik % z příjmů vydávají na bydlení",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      title: "Domácnosti s dětmi",
+      series: [
+        {
+          data: [
+            { y: 23, color: "#cbd5e1" },
+            { y: 29, color: "#673349" },
+            { y: 34, color: "#cbd5e1" },
+            { y: 34, color: "#cbd5e1" },
+          ],
+          color: "#673349",
+          name: "kolik % z příjmů vydávají na bydlení",
+        },
+      ],
+    },
+    {
+      title: "Domácnost bez dětí (do 65 let)",
+      series: [
+        {
+          data: [
+            { y: 22, color: "#cbd5e1" },
+            { y: 29, color: "#673349" },
+            { y: 32, color: "#cbd5e1" },
+            { y: 32, color: "#cbd5e1" },
+          ],
+          color: "#673349",
+          name: "kolik % z příjmů vydávají na bydlení",
+        },
+      ],
+    },
+    {
+      title: "Senior – samostatně žijící",
+      series: [
+        {
+          data: [
+            { y: 36, color: "#cbd5e1" },
+            { y: 40, color: "#673349" },
+            { y: 44, color: "#cbd5e1" },
+            { y: 41, color: "#cbd5e1" },
+          ],
+          color: "#673349",
+          name: "kolik % z příjmů vydávají na bydlení",
+        },
+      ],
+    },
+    {
+      title: "Senior – více členů domácnosti",
+      series: [
+        {
+          data: [
+            { y: 19, color: "#cbd5e1" },
+            { y: 24, color: "#673349" },
+            { y: 27, color: "#cbd5e1" },
+            { y: 25, color: "#cbd5e1" },
           ],
           color: "#673349",
           name: "kolik % z příjmů vydávají na bydlení",
@@ -163,68 +225,6 @@ const data: any = [
             { y: 21, color: "#673349" },
             { y: 24, color: "#cbd5e1" },
             { y: 23, color: "#cbd5e1" },
-          ],
-          color: "#673349",
-          name: "kolik % z příjmů vydávají na bydlení",
-        },
-      ],
-    },
-  ],
-  [
-    {
-      title: "Domácnosti s dětmi",
-      series: [
-        {
-          data: [
-            { y: 23, color: "#cbd5e1" },
-            { y: 29, color: "#673349" },
-            { y: 34, color: "#cbd5e1" },
-            { y: 34, color: "#cbd5e1" },
-          ],
-          color: "#673349",
-          name: "kolik % z příjmů vydávají na bydlení",
-        },
-      ],
-    },
-    {
-      title: "Domácnost bez dětí (do 65 let)",
-      series: [
-        {
-          data: [
-            { y: 22, color: "#cbd5e1" },
-            { y: 29, color: "#673349" },
-            { y: 32, color: "#cbd5e1" },
-            { y: 32, color: "#cbd5e1" },
-          ],
-          color: "#673349",
-          name: "kolik % z příjmů vydávají na bydlení",
-        },
-      ],
-    },
-    {
-      title: "Senior – samostatně žijící",
-      series: [
-        {
-          data: [
-            { y: 36, color: "#cbd5e1" },
-            { y: 40, color: "#673349" },
-            { y: 44, color: "#cbd5e1" },
-            { y: 41, color: "#cbd5e1" },
-          ],
-          color: "#673349",
-          name: "kolik % z příjmů vydávají na bydlení",
-        },
-      ],
-    },
-    {
-      title: "Senior – více členů domácnosti",
-      series: [
-        {
-          data: [
-            { y: 19, color: "#cbd5e1" },
-            { y: 24, color: "#673349" },
-            { y: 27, color: "#cbd5e1" },
-            { y: 25, color: "#cbd5e1" },
           ],
           color: "#673349",
           name: "kolik % z příjmů vydávají na bydlení",

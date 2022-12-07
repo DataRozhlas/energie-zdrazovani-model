@@ -10,9 +10,9 @@ const isMobile =
 
 const buttons: string[] = [
   "Všechny domácnosti",
+  "Podle typu domácnosti",
   "Podle příjmů",
   "Podle příjmů a dětí",
-  "Podle dětí a věku",
 ];
 
 const categories: string[] = [
@@ -39,6 +39,68 @@ const data: any = [
             { y: 14, color: "#dd505b" },
             { y: 17, color: "#cbd5e1" },
             { y: 16, color: "#cbd5e1" },
+          ],
+          color: "#dd505b",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      title: "Domácnosti s dětmi",
+      series: [
+        {
+          data: [
+            { y: 12, color: "#cbd5e1" },
+            { y: 22, color: "#dd505b" },
+            { y: 25, color: "#cbd5e1" },
+            { y: 25, color: "#cbd5e1" },
+          ],
+          color: "#dd505b",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
+        },
+      ],
+    },
+    {
+      title: "Domácnost bez dětí (do 65 let)",
+      series: [
+        {
+          data: [
+            { y: 4, color: "#cbd5e1" },
+            { y: 9, color: "#dd505b" },
+            { y: 10, color: "#cbd5e1" },
+            { y: 10, color: "#cbd5e1" },
+          ],
+          color: "#dd505b",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
+        },
+      ],
+    },
+    {
+      title: "Senior – samostatně žijící",
+      series: [
+        {
+          data: [
+            { y: 23, color: "#cbd5e1" },
+            { y: 19, color: "#dd505b" },
+            { y: 24, color: "#cbd5e1" },
+            { y: 16, color: "#cbd5e1" },
+          ],
+          color: "#dd505b",
+          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
+        },
+      ],
+    },
+    {
+      title: "Senior – více členů domácnosti",
+      series: [
+        {
+          data: [
+            { y: 5, color: "#cbd5e1" },
+            { y: 6, color: "#dd505b" },
+            { y: 9, color: "#cbd5e1" },
+            { y: 7, color: "#cbd5e1" },
           ],
           color: "#dd505b",
           name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
@@ -163,68 +225,6 @@ const data: any = [
             { y: 1, color: "#dd505b" },
             { y: 2, color: "#cbd5e1" },
             { y: 2, color: "#cbd5e1" },
-          ],
-          color: "#dd505b",
-          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
-        },
-      ],
-    },
-  ],
-  [
-    {
-      title: "Domácnosti s dětmi",
-      series: [
-        {
-          data: [
-            { y: 12, color: "#cbd5e1" },
-            { y: 22, color: "#dd505b" },
-            { y: 25, color: "#cbd5e1" },
-            { y: 25, color: "#cbd5e1" },
-          ],
-          color: "#dd505b",
-          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
-        },
-      ],
-    },
-    {
-      title: "Domácnost bez dětí (do 65 let)",
-      series: [
-        {
-          data: [
-            { y: 4, color: "#cbd5e1" },
-            { y: 9, color: "#dd505b" },
-            { y: 10, color: "#cbd5e1" },
-            { y: 10, color: "#cbd5e1" },
-          ],
-          color: "#dd505b",
-          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
-        },
-      ],
-    },
-    {
-      title: "Senior – samostatně žijící",
-      series: [
-        {
-          data: [
-            { y: 23, color: "#cbd5e1" },
-            { y: 19, color: "#dd505b" },
-            { y: 24, color: "#cbd5e1" },
-            { y: 16, color: "#cbd5e1" },
-          ],
-          color: "#dd505b",
-          name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",
-        },
-      ],
-    },
-    {
-      title: "Senior – více členů domácnosti",
-      series: [
-        {
-          data: [
-            { y: 5, color: "#cbd5e1" },
-            { y: 6, color: "#dd505b" },
-            { y: 9, color: "#cbd5e1" },
-            { y: 7, color: "#cbd5e1" },
           ],
           color: "#dd505b",
           name: "podíl domácností, kterým zbývá míň než 3 tisíce Kč na osobu",

@@ -10,9 +10,9 @@ const isMobile =
 
 const buttons: string[] = [
   "Všechny domácnosti",
+  "Podle typu domácnosti",
   "Podle příjmů",
   "Podle příjmů a dětí",
-  "Podle dětí a věku",
 ];
 
 const categories: string[] = [
@@ -39,6 +39,68 @@ const data: any = [
             { y: 7, color: "#fb646e" },
             { y: 11, color: "#cbd5e1" },
             { y: 10, color: "#cbd5e1" },
+          ],
+          color: "#fb646e",
+          name: "podíl domácností, které mají výdaje vyšší než příjmy",
+        },
+      ],
+    },
+  ],
+  [
+    {
+      title: "Domácnosti s dětmi",
+      series: [
+        {
+          data: [
+            { y: 4, color: "#cbd5e1" },
+            { y: 8, color: "#fb646e" },
+            { y: 11, color: "#cbd5e1" },
+            { y: 11, color: "#cbd5e1" },
+          ],
+          color: "#fb646e",
+          name: "podíl domácností, které mají výdaje vyšší než příjmy",
+        },
+      ],
+    },
+    {
+      title: "Domácnost bez dětí (do 65 let)",
+      series: [
+        {
+          data: [
+            { y: 3, color: "#cbd5e1" },
+            { y: 5, color: "#fb646e" },
+            { y: 9, color: "#cbd5e1" },
+            { y: 9, color: "#cbd5e1" },
+          ],
+          color: "#fb646e",
+          name: "podíl domácností, které mají výdaje vyšší než příjmy",
+        },
+      ],
+    },
+    {
+      title: "Senior – samostatně žijící",
+      series: [
+        {
+          data: [
+            { y: 14, color: "#cbd5e1" },
+            { y: 9, color: "#fb646e" },
+            { y: 15, color: "#cbd5e1" },
+            { y: 6, color: "#cbd5e1" },
+          ],
+          color: "#fb646e",
+          name: "podíl domácností, které mají výdaje vyšší než příjmy",
+        },
+      ],
+    },
+    {
+      title: "Senior – více členů domácnosti",
+      series: [
+        {
+          data: [
+            { y: 3, color: "#cbd5e1" },
+            { y: 7, color: "#fb646e" },
+            { y: 10, color: "#cbd5e1" },
+            { y: 8, color: "#cbd5e1" },
           ],
           color: "#fb646e",
           name: "podíl domácností, které mají výdaje vyšší než příjmy",
@@ -170,68 +232,6 @@ const data: any = [
       ],
     },
   ],
-  [
-    {
-      title: "Domácnosti s dětmi",
-      series: [
-        {
-          data: [
-            { y: 4, color: "#cbd5e1" },
-            { y: 8, color: "#fb646e" },
-            { y: 11, color: "#cbd5e1" },
-            { y: 11, color: "#cbd5e1" },
-          ],
-          color: "#fb646e",
-          name: "podíl domácností, které mají výdaje vyšší než příjmy",
-        },
-      ],
-    },
-    {
-      title: "Domácnost bez dětí (do 65 let)",
-      series: [
-        {
-          data: [
-            { y: 3, color: "#cbd5e1" },
-            { y: 5, color: "#fb646e" },
-            { y: 9, color: "#cbd5e1" },
-            { y: 9, color: "#cbd5e1" },
-          ],
-          color: "#fb646e",
-          name: "podíl domácností, které mají výdaje vyšší než příjmy",
-        },
-      ],
-    },
-    {
-      title: "Senior – samostatně žijící",
-      series: [
-        {
-          data: [
-            { y: 14, color: "#cbd5e1" },
-            { y: 9, color: "#fb646e" },
-            { y: 15, color: "#cbd5e1" },
-            { y: 6, color: "#cbd5e1" },
-          ],
-          color: "#fb646e",
-          name: "podíl domácností, které mají výdaje vyšší než příjmy",
-        },
-      ],
-    },
-    {
-      title: "Senior – více členů domácnosti",
-      series: [
-        {
-          data: [
-            { y: 3, color: "#cbd5e1" },
-            { y: 7, color: "#fb646e" },
-            { y: 10, color: "#cbd5e1" },
-            { y: 8, color: "#cbd5e1" },
-          ],
-          color: "#fb646e",
-          name: "podíl domácností, které mají výdaje vyšší než příjmy",
-        },
-      ],
-    },
-  ],
 ];
 
 const Home: NextPage = () => {
@@ -253,7 +253,7 @@ const Home: NextPage = () => {
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8" ref={containerRef}>
       <h1 className="text-3xl font-bold leading-7 mb-4">
-        {`Jak roste podíl těch, kterým po zaplacení všech výdajů nic nezbývá`}
+        {`Kolik domácností má vyšší výdaje než příjmy`}
       </h1>
       <span className="isolate inline-flex rounded-md shadow-sm mx-px sm:mx-0 mb-px">
         {buttons.map((button, index) =>

@@ -148,7 +148,7 @@ const transactions = [
   },
   {
     rok: "2022",
-    celkem: 2444947.38,
+    celkem: 3509649.15,
     leden: 323762.75,
     unor: 266913.25,
     brezen: 434919.38,
@@ -429,7 +429,7 @@ const Tabulka: NextPage = () => {
                       Celkem
                     </th>
                     <td className="whitespace-nowrap pl-2 pr-3 pt-3 pb-4 text-left text-sm font-semibold text-gray-900">
-                      19 823 567,37 Kč
+                      20 888 269,14 Kč
                     </td>
                     <td
                       colSpan={12}
